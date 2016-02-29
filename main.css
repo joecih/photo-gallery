@@ -1,5 +1,5 @@
 h1 {
-	color: darkblue;
+	color: white;
 	font-family: "Century Gothic", Verdana, Arial;
 }
 
@@ -9,18 +9,30 @@ p {
 }
 
 body {
-	background-color: #cacaca;
+	background-color: #363636;
 	text-align: center;
+	margin-top: 0 10px 0 10px;
 }
 
-ol {
-	list-style-type: none;
+.thumbnails img {
+	height:80px;
+	border: 4px solid #555;
 }
 
-li {
-	font-family: "courier new", Arial;
+.thumbnails img:hover {
+	height:80px;
+	border: 4px solid #d8cb76;
+	cursor: pointer;
 }
 
-img {
-	width: 300px;
+#logo {
+	width: 180px;
 }
+
+.preview {
+	padding: 10px;
+}
+
+/*
+* homework, add thumbnails vertically on left and then play around with onmouseover , on click options and other slick features.
+*/
