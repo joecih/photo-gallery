@@ -1,0 +1,26 @@
+h1 {
+	color: darkblue;
+	font-family: "Century Gothic", Verdana, Arial;
+}
+
+p {
+	color: darkgreen;
+	font-family: Arial;
+}
+
+body {
+	background-color: #cacaca;
+	text-align: center;
+}
+
+ol {
+	list-style-type: none;
+}
+
+li {
+	font-family: "courier new", Arial;
+}
+
+img {
+	width: 300px;
+}
