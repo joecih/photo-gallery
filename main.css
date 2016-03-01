@@ -31,18 +31,14 @@ body {
 
 #logo {
 	min-width: 20px;
-	max-width: 100px;
-	float:right;
+	max-width: 200px;
 }
-
 
 .nav-header {
 	width: 100%;
 	padding: 10px;
 	height: 50px;
 }
-
-
 
 .thumbnails {
   vertical-align: top;
