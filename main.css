@@ -64,8 +64,8 @@ body {
 
 .preview {
   z-index: -999;
-  min-height: 100%;
-  min-width: 1400px;
+  min-height: inherit;
+  min-width: 100%;
   height: auto;
   position: fixed;
   left: 0;
