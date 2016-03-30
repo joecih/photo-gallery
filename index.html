@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link href="https://code.jquery.com/jquery-2.2.1.min.js"/>
-		<link rel="stylesheet" type="text/css" media="screen" href="main.css">
-		<title>Unit1-Day1 Image Gallery</title>
-	</head>
-	<body>
-		<div class"nav-header">
-			
+<html ng-app="mainApp">
 
-			<h1>Unit1-Day1 ( Cosmos )</h1>
-			<img id="logo" src="http://www.digitalcrafts.com/sites/all/themes/digitalcrafts/images/digitalcrafts-site-logo.png">
-<!-- 			<div id="gradient"></div> -->
+<head>
+    <link href="https://code.jquery.com/jquery-2.2.1.min.js" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <title>Unit1-Day1 Image Gallery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</head>
+
+<body ng-controller="galleryController"  ng-init="previewImage='images/image1.jpg'">
+    <div class="nav-header">
 
 
-		</div>
-		<div class="thumbnails">
+        <h1>Unit1-Day1 ( Cosmos )</h1>
+        <img id="logo" src="http://www.digitalcrafts.com/sites/all/themes/digitalcrafts/images/digitalcrafts-site-logo.png">
+
+
+
+    </div>
+    <!--<div class="thumbnails">
 			<img src="images/image1.jpg" name="img1" onclick="preview.src=img1.src">
 			<img src="images/image2.jpg" name="img2" onclick="preview.src=img2.src">
 			<img src="images/image3.jpg" name="img3" onclick="preview.src=img3.src">
 			<img src="images/image4.jpg" name="img4" onclick="preview.src=img4.src">
 			<img src="images/image5.jpg" name="img5" onclick="preview.src=img5.src">
-		</div>
-		<div class="preview">
-			<img name="preview" src="images/image1.jpg">
-		</div>
-		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-		<!-- 		<script src="http://10.150.51.32:35729/livereload.js?snipver=1"></script> -->
-	</body>
+		</div>-->
+    <div class="thumbnails">
+        <li style="list-style: none" ng-repeat="image in images">
+            <img ng-src={{image}} ng-click='updateBackground(image)'>
+        </li>
+    </div>
+    <div class="preview">
+        <img name="preview" ng-src={{previewImage}}>
+    </div>
+
+    <script src="controller.js"></script>
+</body>
+
 </html>

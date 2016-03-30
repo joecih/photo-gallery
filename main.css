@@ -12,6 +12,7 @@ p {
 
 body {
 	background-color: #363636;
+    
 }
 
 .thumbnails {
@@ -57,7 +58,7 @@ body {
 }
 
 .nav-header {
-	width: 100%;
+	width: 99%;
 	padding: 10px;
 }
 
@@ -65,8 +66,7 @@ body {
 .preview {
   z-index: -999;
   min-height: inherit;
-  min-width: 100%;
-  height: auto;
+  width: 100vw;
   position: fixed;
   left: 0;
   top: 0;
